@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather Forecast</title>
+</head>
+
+<body>
+
+</body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Weather Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- Page Layout here -->
+  <div class="row">
+    <div class="col s12 m3">
+      <nav>
+        <div class="nav-wrapper">
+          <div class="input-group mb-3"> 
+            <input id="searchTerm" type="text" class="form-control" placeholder="Search for a city" class="input-group-append">
+            <button id="searchBtn" class="btn btn-primary" type="button" id="button-addon2"><i class="far fa-search"></i></button>
+        </div>
+        </div>
+      </nav>
+      <div class="collection">
+        <a href="#!" class="collection-item" id="clickable">Sacramento</a>
+        <a href="#!" class="collection-item" id="clickable">Los Angeles</a>
+        <!--Not Active-->
+        <a href="#!" class="collection-item" id="clickable">St Louis</a>
+        <a href="#!" class="collection-item" id="clickable">Chicago</a>
+        <a href="#!" class="collection-item" id="clickable">Seattle</a>
+        <a href="#!" class="collection-item" id="clickable">New York</a>
+        <a href="#!" class="collection-item" id="clickable">Philadelphia</a>
+        <a href="#!" class="collection-item" id="clickable">Miami</a>
+      </div>
+    </div>
+    <div class="row">
+      <div id="container">
+        <div class="col s8">
+          <div class="col m12 l12">
+            <div class="card">
+              <div class="card-content">
+                <h3><span id="city" id="forecast"></span></h3>
+                <h6 id="weather-icon"></h6>
+                <h6><span id="temperature"></span></h6>
+                <h6><span id="humidity"></span></h6>
+                <h6><span id="wind"></span></h6>
+                <h6 id="UV-index"></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="container">
+          <div class="col s12 m8 l9">
+            <h5>5-Day Forecast:</h5>
+            <div id="dayForecast" class="row"> 
+            </div> 
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
